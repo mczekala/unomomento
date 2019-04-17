@@ -1,0 +1,19 @@
+.main {
+  margin: 0 auto;
+  width: 900px;
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+body{ 
+  min-height:100%; 
+  padding:0; 
+  margin:0; 
+  position:relative; 
+}
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}

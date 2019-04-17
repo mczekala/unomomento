@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.randomPost .postListItem {
+    margin: 0 auto;
+    width: 600px;
+}
+.randomPost .postListItem img {
+    width: 600px;
+}
+.postList {
+    padding: 50px;
+}
