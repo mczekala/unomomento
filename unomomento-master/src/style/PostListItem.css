@@ -1,6 +1,12 @@
 .postListItem {
-    width: 300px;
+    margin: 10px;
 }
 .postListItem img {
     width: 100%;
+}
+.postListItem div p {
+    display: none;
+}
+.postListItem h2 {
+    font-size: 25px
 }

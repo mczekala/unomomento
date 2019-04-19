@@ -3,13 +3,22 @@
     flex-wrap: wrap;
     list-style-type: none;
 }
+.wrapper a {
+    width: 33%;
+}
 .randomPost .postListItem {
     margin: 0 auto;
     width: 600px;
+    padding: 50px 0 100px 0;
 }
 .randomPost .postListItem img {
     width: 600px;
 }
-.postList {
-    padding: 50px;
-}
+.main {
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    width: 900px;
+    margin-bottom: 200px;
+    text-align: center;
+  }

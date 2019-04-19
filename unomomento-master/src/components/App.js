@@ -6,49 +6,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from './header';
 import Footer from './footer';
 import '../style/App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faChevronLeft,faChevronRight)
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       posts: []
-      //   {
-      //     id:0,
-      //     img: strike,
-      //     title: 'ZNP nie odpuści!',
-      //     content: 'ZNP nie przerwie strajku i zapowiada,ze stajk bedzie kontynuowany bezterminowo. Co nasuwa pytanie co z tegorocznymi maturami. W kraju nie tylko nauczyciele strajkuja, gdyz nadal trwa protest pracownikow administracyjnych sadow i prokurator.A  lekarze rezydenci rowniez rozwazaja ponoeny strajk.'
-      //   },
-      //   {
-      //     id:1,
-      //     img: food,
-      //     title: 'Posilki polakow, czy nadal lubimy tradyjna kuchnie?',
-      //     content: 'Wydawac sie moze ze polacy jako coraz bardziej zapracowany narod, wybiera coraz wiecej fastfood. jednak badania mowia cos innego az 60% polakow uwaza dania kuchni tradycyjnej za ich ulubione. Mozemy byc spokojni burger i frytki nadal przegrywaja ze schabowym i kapustka.'
-      //   },
-      //   {
-      //     id:0,
-      //     img: strike,
-      //     title: 'ZNP nie odpuści!',
-      //     content: 'ZNP nie przerwie strajku i zapowiada,ze stajk bedzie kontynuowany bezterminowo. Co nasuwa pytanie co z tegorocznymi maturami. W kraju nie tylko nauczyciele strajkuja, gdyz nadal trwa protest pracownikow administracyjnych sadow i prokurator.A  lekarze rezydenci rowniez rozwazaja ponoeny strajk.'
-      //   },
-      //   {
-      //     id:1,
-      //     img: food,
-      //     title: 'Posilki polakow, czy nadal lubimy tradyjna kuchnie?',
-      //     content: 'Wydawac sie moze ze polacy jako coraz bardziej zapracowany narod, wybiera coraz wiecej fastfood. jednak badania mowia cos innego az 60% polakow uwaza dania kuchni tradycyjnej za ich ulubione. Mozemy byc spokojni burger i frytki nadal przegrywaja ze schabowym i kapustka.'
-      //   },
-      //   {
-      //     id:0,
-      //     img: strike,
-      //     title: 'ZNP nie odpuści!',
-      //     content: 'ZNP nie przerwie strajku i zapowiada,ze stajk bedzie kontynuowany bezterminowo. Co nasuwa pytanie co z tegorocznymi maturami. W kraju nie tylko nauczyciele strajkuja, gdyz nadal trwa protest pracownikow administracyjnych sadow i prokurator.A  lekarze rezydenci rowniez rozwazaja ponoeny strajk.'
-      //   },
-      //   {
-      //     id:1,
-      //     img: food,
-      //     title: 'Posilki polakow, czy nadal lubimy tradyjna kuchnie?',
-      //     content: 'Wydawac sie moze ze polacy jako coraz bardziej zapracowany narod, wybiera coraz wiecej fastfood. jednak badania mowia cos innego az 60% polakow uwaza dania kuchni tradycyjnej za ich ulubione. Mozemy byc spokojni burger i frytki nadal przegrywaja ze schabowym i kapustka.'
-      //   },
-      // ]
     }
   }
   componentDidMount() {
